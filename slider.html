@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	<script type="text/javascript" src="slider.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+	<script type="text/javascript">
+		var map;
+		var maxZoom = 20;
+		var minZoom = 0;
+
+		function initMap() {
+  
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 48, lng: 0},
+				zoom: 5,
+				maxZoom: maxZoom,
+				minZoom: minZoom
+			});
+  
+			var slider = new zoomSlider(map, minZoom, maxZoom, "zoomSlider");
+  
+		}
+	
+	
+	</script>
+</head>
+
+<body>
+	<div id="map"></div>
+	<div id="zoomSlider"></div>
+</body>
+
+</html>

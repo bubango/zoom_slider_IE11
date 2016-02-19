@@ -1,0 +1,82 @@
+html, body {
+        height: 100%;
+		width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  
+#map {
+		height: 100%;
+		width: 100%;
+		top: 0px;
+      }
+
+input#slide {
+	position: absolute;
+	top: 29px;
+	left: -11px;
+	writing-mode: bt-lr;
+}
+
+input#slide::-ms-track {
+    width: 4px;
+    height: 100%;
+    background: transparent;
+	border-color: transparent;
+    border-width: 0px 7px;
+    color: transparent;
+}
+
+input#slide::-ms-fill-lower {
+    background: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bbbbbb;
+}
+
+input#slide::-ms-fill-upper {
+    background: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bbbbbb;
+}
+
+input#slide::-ms-thumb {
+    border-style: solid;
+	border-width: 1px;
+	border-color: #bbbbbb;
+    height: 5px;
+    width: 14px;
+    background: #ffffff;
+}
+
+input#slide::-ms-tooltip {
+	display:none;
+}
+
+div#zoomSlider {
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	height: 249px;
+	width: 30px;
+}
+
+div#incZoom {
+	top: 0px;
+	background-image:url(img/zoom_in.png);
+}
+
+div#decZoom {
+	bottom: 0px;
+	background-image:url(img/zoom_out.png);
+}
+
+div.zoomBtn {
+	position: absolute;
+	left: 0px;
+	height: 30px;
+	width: 30px;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
